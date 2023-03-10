@@ -3,7 +3,6 @@
 import axios from "axios";
 // import { BACKEND_URL, AUTH_URL } from "../../constants/apiEndpoints";
 import { ERROR_ROUTE } from "../../constants/router";
-import { AUTH_URL } from "../../constants/apiEndpoints";
 
 const makeRequest = async (
   apiEndPoint,
@@ -12,8 +11,8 @@ const makeRequest = async (
   token
 ) => {
   try {
+    console.log("token", token);
     const requestDetails = {
-      baseURL: AUTH_URL,
       url: apiEndPoint.url,
       method: apiEndPoint.method,
       ...dynamicConfig,

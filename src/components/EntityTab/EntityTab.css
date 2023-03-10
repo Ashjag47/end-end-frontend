@@ -1,0 +1,22 @@
+.entity-tab {
+  width: 70%;
+  height: 40px;
+  background-color: rgb(125, 166, 201);
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  padding: 14px 10px 6px 10px;
+  border-radius: 10px;
+}
+
+.entity-tab-field {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.entity-edit-delete {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}

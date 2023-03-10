@@ -39,17 +39,22 @@ input {
   padding: 5px;
 }
 
-button {
+.button-login {
   width: 72%;
   border: none;
   border-radius: 10px;
-  background-color: rgba(134, 92, 255, 255);
+  /* background-color: rgba(134, 92, 255, 255); */
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 20px;
   padding: 14px;
   margin-top: 25px;
   margin-left: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(163, 133, 255),
+    rgb(77, 17, 255)
+  );
 }
 
 .error {

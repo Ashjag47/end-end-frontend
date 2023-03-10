@@ -83,8 +83,8 @@ function LoginBox() {
               {errors.password && errors.password.message}
             </span>
           </div>
-          <div className="button" type="submit">
-            <button>Login</button>
+          <div className="button-log" type="submit">
+            <button className="button-login">Login</button>
           </div>
         </form>
       </div>

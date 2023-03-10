@@ -33,8 +33,11 @@ function App() {
           <Route path={LOGIN_ROUTE} element={<Login />} />
           <Route path={RIGISTER_ROUTE} element={<Rigister />} />
           <Route path={CONTENT_ROUTE} element={<Content />} />
-          <Route path={ENTRIES_ROUTE} element={<Entries />} />
-          <Route path={ERROR_ROUTE} element={<Error />} />
+          <Route
+            path={`${ENTRIES_ROUTE}/:collectionId`}
+            element={<Entries />}
+          />
+          <Route path={`${ERROR_ROUTE}/:errorCode?`} element={<Error />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
